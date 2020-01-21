@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a2e3231e-6dd5-4385-81c8-2d403c432421" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WUCaAFmDMAYcdojJsznB2reWqk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
+    <property name="last_opened_file_path" value="E:/Enigma-App/ms-enigma-backend" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\2020\Projects\ms-farm-backend\src\config" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a2e3231e-6dd5-4385-81c8-2d403c432421" name="Default Changelist" comment="" />
+      <created>1579194847799</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579194847799</updated>
+      <workItem from="1579194851541" duration="8707000" />
+      <workItem from="1579244904310" duration="9167000" />
+      <workItem from="1579273152591" duration="15902000" />
+      <workItem from="1579311262862" duration="5000000" />
+      <workItem from="1579336311469" duration="39722000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="321" y="142" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579305082326">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="321" y="142" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1579305082326" />
+    <state x="420" y="94" key="FileChooserDialogImpl" timestamp="1579342900799">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="420" y="94" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1579342900799" />
+    <state width="1235" height="163" key="GridCell.Tab.0.bottom" timestamp="1579244391932">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1235" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1579244391932" />
+    <state width="1235" height="163" key="GridCell.Tab.0.center" timestamp="1579244391932">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1235" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1579244391932" />
+    <state width="1235" height="163" key="GridCell.Tab.0.left" timestamp="1579244391932">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1235" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1579244391932" />
+    <state width="1235" height="163" key="GridCell.Tab.0.right" timestamp="1579244391932">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1235" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1579244391932" />
+    <state x="335" y="163" key="com.intellij.ide.util.TipDialog" timestamp="1579244920182">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="335" y="163" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1579244920182" />
+    <state x="297" y="151" key="run.anything.popup" timestamp="1579510410677">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1579510410677" />
+  </component>
+</project>
