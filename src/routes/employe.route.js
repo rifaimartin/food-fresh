@@ -1,25 +1,17 @@
 import express from 'express';
-import SliderService from "../services/slider.service";
-import upload from "../middlewares/uploadMiddleware";
+import EmployeService from "../services/employe.service";
+import Employe from '../models/employe.model';
 
-const sliderService = new SliderService();
+const employeService = new EmployeService();
 
-const sliderRouter = express.Router()
-    .post('/', upload.single('sliderImage'), async (req, res) => {
+const employeRouter = express.Router()
+    .post('/', async (req, res) => {
         try {
-            const file = req.file;
-            if (!file || file.mimetype !== 'image/jpeg') {
-                res.status(400).send({
-                    STATUS: 400,
-                    MESSAGE: "Please choose file image"
-                })
-            }
-            let slider = await sliderService.createSlider(req.file, req.body);
-            console.log(req.body);
-            res.status(201).send({
-                STATUS: 201,
+            let employe = await employeService.createEmploye(req.body);
+            res.status(200).send({
+                STATUS: 200,
                 MESSAGE: 'Created successfully',
-                DATA: slider
+                DATA: employe
             })
         } catch (e) {
             console.log(e);
@@ -32,11 +24,11 @@ const sliderRouter = express.Router()
 
     .get('/', async (req, res) => {
         try {
-            let sliders = await sliderService.findAllSliders();
+            let employes = await employeService.findAllEmployes();
             res.status(200).send({
                 STATUS: 200,
                 MESSAGE: "SUCCESS",
-                DATA: sliders
+                DATA: employes
             })
         } catch (e) {
             console.log(e);
@@ -50,17 +42,18 @@ const sliderRouter = express.Router()
     .get('/:id', async (req, res) => {
         try {
             let id = req.params.id;
-            let sliders = await sliderService.findSlider(id);
-            if (!sliders) {
+            console.log(id, "INI ADALAH ID")
+            let employes = await employeService.findEmploye(id);
+            if (!employes) {
                 res.status(404).send({
                     STATUS: 404,
-                    MESSAGE: 'SLIDER NOT FOUND'
+                    MESSAGE: 'EMPLOYE NOT FOUND'
                 })
             } else {
                 res.status(200).send({
                     STATUS: 200,
                     MESSAGE: "SUCCESS",
-                    DATA: sliders
+                    DATA: employes
                 })
             }
         } catch (e) {
@@ -72,16 +65,39 @@ const sliderRouter = express.Router()
         }
     })
 
-    .put('/:id',upload.single('sliderImage'), async (req, res) => {
+    .delete('/:id', async (req,res) => {
+        try{
+        let id = req.param.id
+        let employes = await employeService.deleteEmploye(id)
+        if(!employes){
+            res.status(404).send({
+                STATUS : 404,
+                MESSAGE: "MAAF EMPLOYE TIDAK ADA"
+            })
+        }else{
+            res.status(200).send({
+                STATUS: 200,
+                MESSAGE : "SUCCESS"
+            })
+        }
+    }catch(e){
+        console.log(e);
+        res.status(500).send({
+            STATUS : 500,
+            MESSAGE: 'INTERNAL SERVER ERROR'
+        })
+    }
+    })
+
+    .put('/:id', async (req, res) => {
         try{
             const {id} = req.params;
             let body = {...req.body};
-            const image = req.file;
-            let slider = await sliderService.updateSlider(id, body, image);
+            let employe = await employeService.updateEmploye(id, body);
             res.status(200).send({
                 STATUS: 200,
-                MESSAGE: 'Updated slider successfully',
-                DATA: slider
+                MESSAGE: 'Updated employe successfully',
+                DATA: employe
             })
         } catch (e) {
             console.log(e);
@@ -92,4 +108,6 @@ const sliderRouter = express.Router()
         }
     });
 
-export default sliderRouter;
+    
+
+export default employeRouter;

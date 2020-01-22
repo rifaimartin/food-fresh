@@ -1,8 +1,8 @@
 import MongoClient from 'mongodb' 
-
+import mongoose from 'mongoose'
 
 export default function Connection() {
-    MongoClient.connect(`mongodb://${process.env.DB_HOST}/${process.env.DB_NAME}`, {
+    mongoose.connect(`mongodb://${process.env.DB_HOST}/${process.env.DB_NAME}`, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         serverSelectionTimeoutMS: 5000

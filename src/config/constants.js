@@ -1,6 +1,6 @@
-export const SLiderStatus = {
-    ACTIVE: 'ACTIVE',
-    INACTIVE: 'INACTIVE'
+export const Gender = {
+    MALE: 'Male',
+    FEMALE: 'Female'
 };
 
 
